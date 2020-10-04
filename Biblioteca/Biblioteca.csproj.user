@@ -7,18 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Update="Views\editarCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\frmListarClientes.xaml.cs">
-=======
-<<<<<<< HEAD
-    <Compile Update="Views\fmrCadastrarLivro.xaml.cs">
-=======
+    <Compile Update="Views\frmListarClientes.xaml.cs"/>
+    <Compile Update="Views\fmrCadastrarLivro.xaml.cs"/>
     <Compile Update="Views\fmrListarClientes.xaml.cs">
->>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
->>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmEditarFuncionario.xaml.cs">
@@ -35,18 +29,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Page Update="Views\editarCliente.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\frmListarClientes.xaml">
-=======
-<<<<<<< HEAD
-    <Page Update="Views\fmrCadastrarLivro.xaml">
-=======
+    <Page Update="Views\frmListarClientes.xaml"/>
+    <Page Update="Views\fmrCadastrarLivro.xaml"/>
     <Page Update="Views\fmrListarClientes.xaml">
->>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
->>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
+
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmEditarFuncionario.xaml">
