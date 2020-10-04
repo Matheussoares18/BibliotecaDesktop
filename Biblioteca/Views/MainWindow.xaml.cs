@@ -31,11 +31,11 @@ namespace Biblioteca
         public void userRegister()
         {
 
-       
+
 
         }
 
-       
+
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -47,13 +47,20 @@ namespace Biblioteca
         {
             fmrCadastroClientes frmCliente = new fmrCadastroClientes();
             frmCliente.ShowDialog();
-           
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             fmrListarFuncionarios fmrListarFuncionarios = new fmrListarFuncionarios();
             fmrListarFuncionarios.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            fmrCadastrarLivro fmrLivro = new fmrCadastrarLivro();
+            fmrLivro.ShowDialog();
             this.Close();
         }
     }

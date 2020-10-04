@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1\
+C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\obj\Debug\netcoreapp3.1\
 Biblioteca
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\App.xaml
-5543400091
+C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\App.xaml
+61295099691
 
-29-932556857
-217105775475
-Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+30-876930724
+2171483056814
+Views\fmrCadastrarLivro.xaml;Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
 
-False
+True
 

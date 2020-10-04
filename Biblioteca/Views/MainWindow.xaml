@@ -10,6 +10,6 @@
         <Button Content="Funcionários" HorizontalAlignment="Left" Margin="559,152,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_1"/>
         <Button Content="Clientes" HorizontalAlignment="Left" Margin="559,194,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_2" />
         <Button Content="Listar Funcionários" HorizontalAlignment="Left" Margin="559,236,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click"/>
-
+        <Button Content="Cadastrar Livros" HorizontalAlignment="Left" Margin="559,110,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_3"/>
     </Grid>
 </Window>
