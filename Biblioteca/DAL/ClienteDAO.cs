@@ -13,6 +13,9 @@ namespace Biblioteca.DAO
         private static Context _context = SingletonContext.GetInstance();
         public static Cliente BuscarPorcpf(string cpf) =>
            _context.Cliente.FirstOrDefault(x => x.cpf == cpf);
+
+        public static List<Cliente> Listar() =>
+          _context.Cliente.ToList();
         public static void userRegister(Cliente cliente)
         {
             if (BuscarPorcpf(cliente.cpf) == null)

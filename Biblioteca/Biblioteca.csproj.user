@@ -7,7 +7,11 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="Views\fmrCadastrarLivro.xaml.cs">
+=======
+    <Compile Update="Views\fmrListarClientes.xaml.cs">
+>>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmEditarFuncionario.xaml.cs">
@@ -24,7 +28,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Page Update="Views\fmrCadastrarLivro.xaml">
+=======
+    <Page Update="Views\fmrListarClientes.xaml">
+>>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmEditarFuncionario.xaml">

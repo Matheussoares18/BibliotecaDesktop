@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\App.xaml
-61295099691
+7-576301917
 
-30-876930724
+311625343624
 2171483056814
-Views\fmrCadastrarLivro.xaml;Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+Views\fmrCadastrarLivro.xaml;Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarClientes.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
 
 True
 

@@ -9,12 +9,21 @@ Biblioteca
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+<<<<<<< HEAD
 C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\App.xaml
 61295099691
 
 282102907938
 2171483056814
 Views\fmrCadastrarLivro.xaml;Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+=======
+C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\App.xaml
+6-1328001517
+
+28254588857
+217105775475
+Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarClientes.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+>>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
 
 False
 
