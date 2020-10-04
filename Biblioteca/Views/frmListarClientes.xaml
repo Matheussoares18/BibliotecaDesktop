@@ -16,17 +16,17 @@
                                     Header="Nome" Width="1*"/>
                 <DataGridTextColumn Binding="{Binding cpf}"
                                     Header="Email" Width="1*"/>
-                <DataGridTextColumn  Binding="{Binding dataBirth}"
-                                    Header="dataNasc" Width="1*"/>
+                <DataGridTextColumn  Binding="{Binding dateBirth}"
+                                    Header="dataBirth" Width="1*"/>
                 <DataGridTextColumn Binding="{Binding email}"
                                     Header="email" Width="1*"/>
 
-                <DataGridTextColumn Binding="{Binding telefone}"
+                <DataGridTextColumn Binding="{Binding contatosCliente}"
                                     Header="telefone" Width="1*"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Voltar" HorizontalAlignment="Left" Margin="264,389,0,0" VerticalAlignment="Top" Width="136" />
-        <Button Content="Editar informações" HorizontalAlignment="Left" Margin="424,389,0,0" VerticalAlignment="Top" Width="123" />
+        <Button Content="Editar informações" HorizontalAlignment="Left" Margin="424,389,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click" />
 
     </Grid>
 </Window>

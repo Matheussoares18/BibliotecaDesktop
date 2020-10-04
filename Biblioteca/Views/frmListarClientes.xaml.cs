@@ -28,11 +28,20 @@ namespace Biblioteca.Views
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+           
+            
             Cliente.AddRange(ClienteDAO.Listar());
 
             dtaClientes.ItemsSource = Cliente;
             dtaClientes.Items.Refresh();
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            editarCliente frmEditar = new editarCliente();
+            frmEditar.Show();
+            this.Close();
         }
     }
 }

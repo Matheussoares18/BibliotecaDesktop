@@ -7,16 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\fmrListarClientes.xaml.cs">
+    <Compile Update="Views\editarCliente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmListarClientes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmEditarFuncionario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\fmrCadastroClientes.xaml.cs">
+    <Compile Update="Views\frmCadastroClientes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\fmrListarFuncionarios.xaml.cs">
+    <Compile Update="Views\frmListarFuncionarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmCadastroFuncionarios.xaml.cs">
@@ -24,16 +27,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\fmrListarClientes.xaml">
+    <Page Update="Views\editarCliente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmListarClientes.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmEditarFuncionario.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\fmrCadastroClientes.xaml">
+    <Page Update="Views\frmCadastroClientes.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\fmrListarFuncionarios.xaml">
+    <Page Update="Views\frmListarFuncionarios.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

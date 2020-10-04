@@ -19,7 +19,7 @@ namespace Biblioteca.Models
 
         public DateTime dateBirth { get; set; }
 
-        public List<ContatosCliente> contatosCliente { get; set; }
+        public int telefone { get; set; }
 
     }
 }

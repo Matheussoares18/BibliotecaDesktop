@@ -19,7 +19,7 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class fmrCadastroClientes : Window
     {
-        private List<ContatosCliente> ContatoCliente = new List<ContatosCliente>();
+       
         public fmrCadastroClientes()
         {
             InitializeComponent();
@@ -39,6 +39,7 @@ namespace Biblioteca.Views
                 email = txtEmail.Text,
                 fullName = txtNome.Text,
                 dateBirth = formated,
+                telefone = Convert.ToInt32(txtNumero.Text)
 
             };
             ClienteDAO.userRegister(cliente);

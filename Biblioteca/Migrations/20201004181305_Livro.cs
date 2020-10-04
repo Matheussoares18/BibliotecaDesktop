@@ -17,17 +17,9 @@ namespace Biblioteca.Migrations
                 table: "Cliente",
                 newName: "Id");
 
-            migrationBuilder.AddColumn<DateTime>(
-                name: "CriadoEm",
-                table: "Funcionario",
-                nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+          
 
-            migrationBuilder.AddColumn<DateTime>(
-                name: "CriadoEm",
-                table: "Cliente",
-                nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+           
 
             migrationBuilder.CreateTable(
                 name: "Livro",

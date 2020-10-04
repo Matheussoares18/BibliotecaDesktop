@@ -5725,11 +5725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\soare\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\obj\\",
+      "outputPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soare\\AppData\\Roaming\\NuGet\\NuGet.Config",

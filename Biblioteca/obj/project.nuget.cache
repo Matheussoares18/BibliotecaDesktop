@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7P28+5LXzW/Vq4qSaxX/gInr7Pwsn8hnih6e9qLMk20IliAkB3vWpQMJJgp9YcuyLXdFEQWJ/b+Yv1y8X212XQ==",
+  "dgSpecHash": "vFY9Kv974xOFQyGXclxiyK8hJEzFmzNGKx16kII4wM1e64PCWCxk+/9NnTWtkfKEle2+OFAgoIeztQ3p4OamrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soare\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\soare\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

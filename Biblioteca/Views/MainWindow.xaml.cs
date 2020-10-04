@@ -45,8 +45,8 @@ namespace Biblioteca
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            fmrCadastroClientes frmCliente = new fmrCadastroClientes();
-            frmCliente.ShowDialog();
+            fmrCadastroClientes fmrCliente = new fmrCadastroClientes();
+            fmrCliente.ShowDialog();
            
         }
 
@@ -55,6 +55,16 @@ namespace Biblioteca
             fmrListarFuncionarios fmrListarFuncionarios = new fmrListarFuncionarios();
             fmrListarFuncionarios.Show();
             this.Close();
+        }
+
+        
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            fmrListarClientes frm = new fmrListarClientes();
+            frm.Show();
+            this.Close();
+
         }
     }
 }
