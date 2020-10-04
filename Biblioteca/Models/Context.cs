@@ -9,9 +9,11 @@ namespace Biblioteca.Models
     {
         public DbSet<Cliente> Cliente { get; set; }
 
+        public DbSet<Funcionario> Funcionarios { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-C91RTCR\SQLEXPRESS;Database=Biblioteca;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=Biblioteca;Trusted_Connection=true");
         }
 
     }

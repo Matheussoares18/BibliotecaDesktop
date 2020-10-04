@@ -1,0 +1,22 @@
+﻿<Window x:Class="Biblioteca.Views.CadastroFuncionarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteca.Views"
+        mc:Ignorable="d"
+        Title="CadastroFuncionarios" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="113,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="70,213,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Margin="113,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.268,0.552"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.336,0.429"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="113,287,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="70,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <Label Content="Data de nascimento:" HorizontalAlignment="Left" Margin="70,314,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="193,315,0,0" VerticalAlignment="Top"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="111,364,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
+        <Label Content="Cadastro de Funcionários" HorizontalAlignment="Left" Margin="60,140,0,0" VerticalAlignment="Top" Width="399" FontSize="36"/>
+
+    </Grid>
+</Window>

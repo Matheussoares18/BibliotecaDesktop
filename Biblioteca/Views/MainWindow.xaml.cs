@@ -1,5 +1,6 @@
 ﻿using Biblioteca.DAO;
 using Biblioteca.Models;
+using Biblioteca.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,35 +35,19 @@ namespace Biblioteca
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+       
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Cliente cliente = new Cliente
-            {
-                cpf = txtCpf.Text,
-                email = txtEmail.Text,
-                fullName = txtFullName.Text,
-                dateBirth = DateTime.Now,
-                
-            };
-            ClienteDal.userRegister(cliente);
-
-        
-           
-          
-           
-
-            
-
+            CadastroFuncionarios frm = new CadastroFuncionarios();
+            frm.ShowDialog();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
-        {
-
+            fmrCadastroClientes frmCliente = new fmrCadastroClientes();
+            frmCliente.ShowDialog();
+           
         }
     }
 }
