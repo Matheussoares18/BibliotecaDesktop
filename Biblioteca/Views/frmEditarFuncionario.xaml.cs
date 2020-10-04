@@ -62,10 +62,15 @@ namespace Biblioteca.Views
 
         private void editFuncionario()
         {
-            FuncionarioDAO.Alterar(funcionarios);
             DateTime? selectedDate = datePicker1.SelectedDate;
             DateTime formated = selectedDate.Value;
-           
+
+            funcionarios.email = txtEmail.Text;
+            funcionarios.cpf = txtEmail.Text;
+            funcionarios.nome = txtNome.Text;
+            funcionarios.dataNasc = formated;
+            FuncionarioDAO.Alterar(funcionarios);
+          
             txtEmail.Clear();
             txtCpf.Clear();
             txtId.Clear();
