@@ -4,14 +4,16 @@ using Biblioteca.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Biblioteca.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20201004181305_Livro")]
+    partial class Livro
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,29 +48,6 @@ namespace Biblioteca.Migrations
                     b.ToTable("Cliente");
                 });
 
-            modelBuilder.Entity("Biblioteca.Models.ContatosCliente", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("clienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("telefone")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("clienteId");
-
-                    b.ToTable("ContatosCliente");
-                });
-
             modelBuilder.Entity("Biblioteca.Models.Funcionario", b =>
                 {
                     b.Property<int>("Id")
@@ -96,7 +75,6 @@ namespace Biblioteca.Migrations
                     b.ToTable("Funcionario");
                 });
 
-<<<<<<< HEAD
             modelBuilder.Entity("Biblioteca.Models.Livro", b =>
                 {
                     b.Property<int>("Id")
@@ -128,15 +106,6 @@ namespace Biblioteca.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Livro");
-=======
-            modelBuilder.Entity("Biblioteca.Models.ContatosCliente", b =>
-                {
-                    b.HasOne("Biblioteca.Models.Cliente", "cliente")
-                        .WithMany("contatosCliente")
-                        .HasForeignKey("clienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
->>>>>>> b53d387c8f5eb1052e5c1bd8ebfddb377e5970d5
                 });
 #pragma warning restore 612, 618
         }
