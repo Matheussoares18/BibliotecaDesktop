@@ -5720,25 +5720,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
-    "F:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\soare\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\Gabriel\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
-      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\source\\repos\\Biblioteca\\Biblioteca\\obj\\",
+      "projectPath": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\Biblioteca.csproj",
+      "packagesPath": "C:\\Users\\soare\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\soare\\Source\\Repos\\BibliotecaDesktop\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "F:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\soare\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5790,7 +5785,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,7 +13,7 @@ namespace Biblioteca.Migrations
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
@@ -96,7 +96,7 @@ namespace Biblioteca.Migrations
                     b.ToTable("Funcionario");
                 });
 
-<<<<<<< HEAD
+
             modelBuilder.Entity("Biblioteca.Models.Livro", b =>
                 {
                     b.Property<int>("Id")
@@ -128,17 +128,18 @@ namespace Biblioteca.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Livro");
-=======
-            modelBuilder.Entity("Biblioteca.Models.ContatosCliente", b =>
-                {
-                    b.HasOne("Biblioteca.Models.Cliente", "cliente")
-                        .WithMany("contatosCliente")
-                        .HasForeignKey("clienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
->>>>>>> b53d387c8f5eb1052e5c1bd8ebfddb377e5970d5
+
+                    modelBuilder.Entity("Biblioteca.Models.ContatosCliente", b =>
+                        {
+                            b.HasOne("Biblioteca.Models.Cliente", "cliente")
+                                .WithMany("contatosCliente")
+                                .HasForeignKey("clienteId")
+                                .OnDelete(DeleteBehavior.Cascade)
+                                .IsRequired();
+
+                        });
+
                 });
-#pragma warning restore 612, 618
         }
     }
 }
