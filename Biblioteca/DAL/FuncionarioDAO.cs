@@ -12,6 +12,8 @@ namespace Biblioteca.DAO
         private static Context _context = SingletonContext.GetInstance();
         public static Funcionario BuscarPorcpf(string cpf) =>
            _context.Funcionarios.FirstOrDefault(x => x.cpf == cpf);
+        public static List<Funcionario> Listar() =>
+            _context.Funcionarios.ToList();
 
 
         public static bool Cadastrar(Funcionario funcionario)

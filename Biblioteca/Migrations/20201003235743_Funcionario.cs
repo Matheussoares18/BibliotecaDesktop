@@ -11,16 +11,17 @@ namespace Biblioteca.Migrations
                 name: "Funcionario",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(nullable: true),
                     cpf = table.Column<string>(nullable: true),
+                    CriadoEm = table.Column<DateTime>(nullable: false),
                     email = table.Column<string>(nullable: true),
                     dataNasc = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Funcionario", x => x.id);
+                    table.PrimaryKey("PK_Funcionario", x => x.Id);
                 });
         }
 

@@ -7,10 +7,9 @@ using System.Text;
 namespace Biblioteca.Models
 {
     [Table("Funcionario")]
-    class Funcionario
+    class Funcionario : BaseModel
     {
-        [Key]
-        public int id { get; set; }
+   
 
         public string nome { get; set; }
 

@@ -1,16 +1,10 @@
 ﻿using Biblioteca.DAO;
+
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -19,20 +13,38 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class CadastroFuncionarios : Window
     {
+        private List<Funcionario> Funcionarios = new List<Funcionario>();
+        Context context = new Context();
         private Funcionario funcionario;
         public CadastroFuncionarios()
         {
             InitializeComponent();
-            LimparFormulario();
+
+
+
+            
+
+
+
+            txtBox.ItemsSource =context.Funcionarios.ToList();
+            txtBox.DisplayMemberPath = "cpf";
+            txtBox.DisplayMemberPath = "nome";
+            txtBox.SelectedValuePath = "Id";
+
+
+
+
         }
+      
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DateTime? selectedDate = datePicker1.SelectedDate;
 
-            
-                DateTime formated = selectedDate.Value;
-            
+
+            DateTime formated = selectedDate.Value;
+
 
             funcionario = new Funcionario
             {
@@ -41,6 +53,7 @@ namespace Biblioteca.Views
                 email = txtEmail.Text,
                 dataNasc = formated
             };
+
 
             if (FuncionarioDAO.Cadastrar(funcionario))
             {
@@ -54,8 +67,8 @@ namespace Biblioteca.Views
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            
-    }
+
+        }
         public void LimparFormulario()
         {
 

@@ -11,16 +11,18 @@ namespace Biblioteca.Migrations
                 name: "Cliente",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     cpf = table.Column<string>(nullable: true),
+                    CriadoEm = table.Column<DateTime>(nullable: false),
                     email = table.Column<string>(nullable: true),
                     fullName = table.Column<string>(nullable: true),
                     dateBirth = table.Column<DateTime>(nullable: false)
+
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cliente", x => x.id);
+                    table.PrimaryKey("PK_Cliente", x => x.Id);
                 });
         }
 

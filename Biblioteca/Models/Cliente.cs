@@ -8,11 +8,10 @@ using System.Windows.Controls.Primitives;
 namespace Biblioteca.Models
 {
     [Table("Cliente")]
-    class Cliente
+    class Cliente : BaseModel
     {
         
-        [Key]
-        public int id { get; set; }
+      
         public string cpf { get; set; }
         public string email { get; set; }
 
