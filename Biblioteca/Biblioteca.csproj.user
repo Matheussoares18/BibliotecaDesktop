@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\frmEditarFuncionario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\fmrCadastroClientes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\fmrListarFuncionarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmCadastroFuncionarios.xaml.cs">
@@ -15,7 +21,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\frmEditarFuncionario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\fmrCadastroClientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\fmrListarFuncionarios.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

@@ -15,7 +15,7 @@ namespace Biblioteca.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(nullable: true),
                     cpf = table.Column<string>(nullable: true),
-                    CriadoEm = table.Column<DateTime>(nullable: false),
+              
                     email = table.Column<string>(nullable: true),
                     dataNasc = table.Column<DateTime>(nullable: false)
                 },

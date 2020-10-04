@@ -15,8 +15,8 @@
         <Label Content="Email:" HorizontalAlignment="Left" Margin="70,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
         <Label Content="Data de nascimento:" HorizontalAlignment="Left" Margin="70,314,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="193,315,0,0" VerticalAlignment="Top"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="111,364,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
-        <Label Content="Cadastro de Clientes" HorizontalAlignment="Left" Margin="60,140,0,0" VerticalAlignment="Top" Width="399" FontSize="36"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="111,394,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
+        <Label Content="Cadastro de Clientes" HorizontalAlignment="Left" Margin="62,99,0,0" VerticalAlignment="Top" Width="399" FontSize="36" RenderTransformOrigin="0.505,-0.044"/>
 
     </Grid>
 </Window>

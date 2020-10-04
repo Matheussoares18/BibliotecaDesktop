@@ -49,5 +49,12 @@ namespace Biblioteca
             frmCliente.ShowDialog();
            
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            fmrListarFuncionarios fmrListarFuncionarios = new fmrListarFuncionarios();
+            fmrListarFuncionarios.Show();
+            this.Close();
+        }
     }
 }

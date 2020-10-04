@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\App.xaml
-317649559
+5543400091
 
-201031448564
+25-1382821907
 217105775475
-Views\CadastroFuncionarios.xaml;Views\fmrCadastroClientes.xaml;Views\MainWindow.xaml;
+Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
 
 True
 
