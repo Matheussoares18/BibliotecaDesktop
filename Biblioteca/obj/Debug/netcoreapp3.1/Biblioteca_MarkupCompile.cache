@@ -4,17 +4,39 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\soare\source\repos\Biblioteca\Biblioteca\obj\Debug\netcoreapp3.1\
+=======
+C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\obj\Debug\netcoreapp3.1\
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
 Biblioteca
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+<<<<<<< HEAD
 C:\Users\soare\source\repos\Biblioteca\Biblioteca\App.xaml
 7-2125321584
+=======
+<<<<<<< HEAD
+C:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\App.xaml
+61295099691
+
+282102907938
+2171483056814
+Views\fmrCadastrarLivro.xaml;Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+=======
+C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\App.xaml
+6-1328001517
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
 
 30-1133118849
 217105775475
+<<<<<<< HEAD
 Views\editarCliente.xaml;Views\frmCadastroClientes.xaml;Views\frmCadastroFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\frmListarClientes.xaml;Views\frmListarFuncionarios.xaml;Views\MainWindow.xaml;
+=======
+Views\fmrCadastroClientes.xaml;Views\fmrCadastroFuncionarios.xaml;Views\fmrListarClientes.xaml;Views\fmrListarFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\MainWindow.xaml;
+>>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
 
 False
 

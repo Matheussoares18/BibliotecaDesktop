@@ -31,11 +31,11 @@ namespace Biblioteca
         public void userRegister()
         {
 
-       
+
 
         }
 
-       
+
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -45,9 +45,15 @@ namespace Biblioteca
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             fmrCadastroClientes fmrCliente = new fmrCadastroClientes();
             fmrCliente.ShowDialog();
            
+=======
+            fmrCadastroClientes frmCliente = new fmrCadastroClientes();
+            frmCliente.ShowDialog();
+
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -57,6 +63,7 @@ namespace Biblioteca
             this.Close();
         }
 
+<<<<<<< HEAD
         
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
@@ -65,6 +72,13 @@ namespace Biblioteca
             frm.Show();
             this.Close();
 
+=======
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            fmrCadastrarLivro fmrLivro = new fmrCadastrarLivro();
+            fmrLivro.ShowDialog();
+            this.Close();
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
         }
     }
 }

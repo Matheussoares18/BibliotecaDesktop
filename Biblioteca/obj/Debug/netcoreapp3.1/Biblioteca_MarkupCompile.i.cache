@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\soare\source\repos\Biblioteca\Biblioteca\App.xaml
-7-2125321584
+8-1373621984
 
-32182009785
+33237635918
 217105775475
-Views\editarCliente.xaml;Views\frmCadastroClientes.xaml;Views\frmCadastroFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\frmListarClientes.xaml;Views\frmListarFuncionarios.xaml;Views\MainWindow.xaml;
+Views\editarCliente.xaml;Views\fmrCadastrarLivro.xaml;Views\frmCadastroClientes.xaml;Views\frmCadastroFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\frmListarClientes.xaml;Views\frmListarFuncionarios.xaml;Views\MainWindow.xaml;
 
 True
 

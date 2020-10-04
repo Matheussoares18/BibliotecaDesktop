@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\frmCadastroClientes.xaml;;
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\frmCadastroFuncionarios.xaml;;
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\frmEditarFuncionario.xaml;;
@@ -7,4 +8,21 @@ FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\frmListarClientes.xaml;
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\frmListarFuncionarios.xaml;;
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\MainWindow.xaml;;
 FC:\Users\soare\source\repos\Biblioteca\Biblioteca\Views\editarCliente.xaml;;
+=======
+<<<<<<< HEAD
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\fmrCadastrarLivro.xaml;;
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\fmrCadastroClientes.xaml;;
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\fmrCadastroFuncionarios.xaml;;
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\fmrListarFuncionarios.xaml;;
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\frmEditarFuncionario.xaml;;
+FC:\Users\Gabriel\Source\Repos\BibliotecaFinal\Biblioteca\Views\MainWindow.xaml;;
+=======
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\fmrCadastroClientes.xaml;;
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\fmrCadastroFuncionarios.xaml;;
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\fmrListarFuncionarios.xaml;;
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\frmEditarFuncionario.xaml;;
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\MainWindow.xaml;;
+FC:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\Views\fmrListarClientes.xaml;;
+>>>>>>> b804e58db8b3fac5433c93ff774586fc9b363c15
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
 

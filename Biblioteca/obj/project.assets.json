@@ -5720,20 +5720,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\soare\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
+    "F:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
       "projectPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\soare\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\BibliotecaFinal\\Biblioteca\\Biblioteca.csproj",
+      "projectName": "Biblioteca",
+      "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\BibliotecaFinal\\Biblioteca\\Biblioteca.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel\\Source\\Repos\\BibliotecaFinal\\Biblioteca\\obj\\",
+>>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "F:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\soare\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5785,7 +5798,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
