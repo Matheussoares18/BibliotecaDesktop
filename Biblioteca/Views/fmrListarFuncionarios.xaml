@@ -1,0 +1,27 @@
+﻿<Window x:Class="Biblioteca.Views.fmrListarFuncionarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteca.Views"
+        mc:Ignorable="d"
+        Title="fmrListarFuncionarios" Height="450" Width="800">
+    <Grid>
+
+        <DataGrid x:Name="dtaFuncionarios"  AutoGenerateColumns="False" HorizontalAlignment="Center" Width="800" Margin="0,0,0,79" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding nome}"
+                                    Header="Nome" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding cpf}"
+                                    Header="Email" Width="1*"/>
+                <DataGridTextColumn  Binding="{Binding dataNasc}"
+                                    Header="dataNasc" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding email}"
+                                    Header="email" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="264,389,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
+        <Button Content="Editar informações" HorizontalAlignment="Left" Margin="424,389,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

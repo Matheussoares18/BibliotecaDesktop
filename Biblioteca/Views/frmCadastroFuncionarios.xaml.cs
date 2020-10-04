@@ -13,27 +13,13 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class CadastroFuncionarios : Window
     {
-        private List<Funcionario> Funcionarios = new List<Funcionario>();
-        Context context = new Context();
+       
         private Funcionario funcionario;
         public CadastroFuncionarios()
         {
             InitializeComponent();
-
-
-
-            
-
-
-
-            txtBox.ItemsSource =context.Funcionarios.ToList();
-            txtBox.DisplayMemberPath = "cpf";
-            txtBox.DisplayMemberPath = "nome";
-            txtBox.SelectedValuePath = "Id";
-
-
-
-
+              
+               
         }
       
 

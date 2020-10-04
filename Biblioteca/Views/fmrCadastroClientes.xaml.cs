@@ -19,6 +19,7 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class fmrCadastroClientes : Window
     {
+        private List<ContatosCliente> ContatoCliente = new List<ContatosCliente>();
         public fmrCadastroClientes()
         {
             InitializeComponent();

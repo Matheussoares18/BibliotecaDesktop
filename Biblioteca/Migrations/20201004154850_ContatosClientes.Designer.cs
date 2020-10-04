@@ -4,14 +4,16 @@ using Biblioteca.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Biblioteca.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20201004154850_ContatosClientes")]
+    partial class ContatosClientes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,39 +98,6 @@ namespace Biblioteca.Migrations
                     b.ToTable("Funcionario");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("Biblioteca.Models.Livro", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ano")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("autor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("editora")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("genero")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("isbn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("titulo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Livro");
-=======
             modelBuilder.Entity("Biblioteca.Models.ContatosCliente", b =>
                 {
                     b.HasOne("Biblioteca.Models.Cliente", "cliente")
@@ -136,7 +105,6 @@ namespace Biblioteca.Migrations
                         .HasForeignKey("clienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
->>>>>>> b53d387c8f5eb1052e5c1bd8ebfddb377e5970d5
                 });
 #pragma warning restore 612, 618
         }
