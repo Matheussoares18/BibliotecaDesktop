@@ -17,13 +17,8 @@ namespace Biblioteca.Views
         private Funcionario funcionario;
         public CadastroFuncionarios()
         {
-            InitializeComponent();
-              
-               
+            InitializeComponent();    
         }
-      
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DateTime? selectedDate = datePicker1.SelectedDate;

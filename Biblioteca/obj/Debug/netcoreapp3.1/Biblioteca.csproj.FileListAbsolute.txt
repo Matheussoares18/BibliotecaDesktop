@@ -184,3 +184,5 @@ C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1
 C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmEditarFuncionario.g.cs
 C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmEditarFuncionario.baml
 >>>>>>> b53d387c8f5eb1052e5c1bd8ebfddb377e5970d5
+C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1\Views\fmrListarClientes.g.cs
+C:\Users\soare\Source\Repos\BibliotecaDesktop\Biblioteca\obj\Debug\netcoreapp3.1\Views\fmrListarClientes.baml
