@@ -95,5 +95,13 @@ namespace Biblioteca
             frm.Show();
             this.Close();
         }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            ListarLivros listarLivros = new ListarLivros();
+
+            listarLivros.Show();
+            this.Close();
+        }
     }
 }

@@ -38,13 +38,13 @@ namespace Biblioteca.Views
 
             if (FuncionarioDAO.Cadastrar(funcionario))
             {
-                MessageBox.Show("Funcionário cadastrado com sucesso!!!", "Vendas WPF",
+                MessageBox.Show("Funcionário cadastrado com sucesso!!!", "Biblioteca",
                     MessageBoxButton.OK, MessageBoxImage.Information);
                 LimparFormulario();
             }
             else
             {
-                MessageBox.Show("CPF já cadastrado!!", "Vendas WPF",
+                MessageBox.Show("CPF já cadastrado!!", "Biblioteca",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
 

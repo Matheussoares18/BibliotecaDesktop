@@ -73,3 +73,7 @@ C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.
 C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmEmprestimo.baml
 C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmListarEmprestimo.g.cs
 C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmListarEmprestimo.baml
+C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\ListarLivros.g.cs
+C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\ListarLivros.baml
+C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmEditarLivros.g.cs
+C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\obj\Debug\netcoreapp3.1\Views\frmEditarLivros.baml

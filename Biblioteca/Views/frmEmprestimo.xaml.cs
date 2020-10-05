@@ -102,14 +102,18 @@ namespace Biblioteca.Views
         }
         private void PopularEmprestimo(Livro livro)
         {
+            livro.emprestado = true;
             emprestimo.Itens.Add(
                 new LivroEmprestimo
                 {
-                    livro = livro
+                    livro = livro,
+                   
 
                 }
                 );
-          
+            LivroDAO.Alterar(livro);
+
+
         }
       
 

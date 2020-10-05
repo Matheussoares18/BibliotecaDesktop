@@ -10,6 +10,9 @@
     <Compile Update="Views\editarCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\frmEditarLivros.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\frmEmprestimo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,9 +33,15 @@
     <Compile Update="Views\frmCadastroFuncionarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ListarLivros.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\editarCliente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmEditarLivros.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmEmprestimo.xaml">
@@ -50,6 +59,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmListarFuncionarios.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ListarLivros.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

@@ -62,12 +62,12 @@ namespace Biblioteca.Views
             Cliente foundCliente = ClienteDAO.BuscarPorId(selectedId);
 
             cliente = foundCliente;
-            txtId.Text = cliente.Id.ToString();
-            txtNome.Text = cliente.fullName;
-            txtCpf.Text = cliente.cpf;
-            txtEmail.Text = cliente.email;
-            datePicker1.DisplayDate = cliente.dateBirth;
-            txtTelefone.Text = cliente.telefone.ToString();
+            txtId.Text = foundCliente.Id.ToString();
+            txtNome.Text = foundCliente.fullName;
+            txtCpf.Text = foundCliente.cpf;
+            txtEmail.Text = foundCliente.email;
+            datePicker1.DisplayDate = foundCliente.dateBirth;
+            txtTelefone.Text = foundCliente.telefone.ToString();
             btnSalvar.IsEnabled = true;
         }
         private void editCliente()

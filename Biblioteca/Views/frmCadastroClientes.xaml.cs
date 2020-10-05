@@ -44,6 +44,8 @@ namespace Biblioteca.Views
 
             };
             ClienteDAO.userRegister(cliente);
+            MessageBox.Show("Cliente cadastrado com sucesso!!!", "Biblioteca",
+                   MessageBoxButton.OK, MessageBoxImage.Information);
         }
         public void LimparFormulario()
         {

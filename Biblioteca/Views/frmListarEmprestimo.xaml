@@ -12,9 +12,9 @@
 
         <DataGrid x:Name="dtaEmprestimos"  AutoGenerateColumns="False" HorizontalAlignment="Left" Width="607" Margin="193,0,0,236" >
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Funcionario.Id}"
+                <DataGridTextColumn Binding="{Binding clienteId}"
                                     Header="FuncionarioId" Width="1*"/>
-                <DataGridTextColumn Binding="{Binding Cliente.Id}"
+                <DataGridTextColumn Binding="{Binding clienteId}"
                                     Header="ClienteId" Width="1*"/>
                 <DataGridTextColumn Binding="{Binding dataDevolucao}"
                                     Header="Data prevista de devolução" Width="1*"/>

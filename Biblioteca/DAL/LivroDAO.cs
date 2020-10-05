@@ -16,6 +16,23 @@ namespace Biblioteca.DAL
         public static List<Livro> Listar() =>
         _context.Livro.ToList();
 
+        public static bool Alterar(Livro livro)
+        {
+            try
+            {
+                _context.Livro.Update(livro);
+                _context.SaveChanges();
+                return true;
+
+            }
+            catch
+            {
+                return false;
+            }
+           
+        }
+
+
         public static Livro BuscarPorId(int Id) =>
         _context.Livro.Find(Id);
 

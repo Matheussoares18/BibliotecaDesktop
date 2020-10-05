@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\soare\source\repos\BibliotecaDesktop1\Biblioteca\App.xaml
-101170432302
+12-1950219977
 
-441749959166
+46-524282144
 217105775475
-Views\editarCliente.xaml;Views\fmrCadastrarLivro.xaml;Views\frmCadastroClientes.xaml;Views\frmCadastroFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\frmEmprestimo.xaml;Views\frmListarClientes.xaml;Views\frmListarEmprestimo.xaml;Views\frmListarFuncionarios.xaml;Views\MainWindow.xaml;
+Views\editarCliente.xaml;Views\fmrCadastrarLivro.xaml;Views\frmCadastroClientes.xaml;Views\frmCadastroFuncionarios.xaml;Views\frmEditarFuncionario.xaml;Views\frmEditarLivros.xaml;Views\frmEmprestimo.xaml;Views\frmListarClientes.xaml;Views\frmListarEmprestimo.xaml;Views\frmListarFuncionarios.xaml;Views\ListarLivros.xaml;Views\MainWindow.xaml;
 
 False
 
