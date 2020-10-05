@@ -10,7 +10,7 @@
     <Grid>
         <Grid>
             <Label Content="Selecione o Cliente" HorizontalAlignment="Left" Margin="30,91,0,0" VerticalAlignment="Top" Width="145"/>
-            <ComboBox x:Name="cmbListCliente" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="145"/>
+            <ComboBox x:Name="cmbListCliente" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="145" SelectionChanged="cmbListCliente_SelectionChanged"/>
             <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="454,154,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Id: " HorizontalAlignment="Left" Margin="413,150,0,0" VerticalAlignment="Top" Width="22"/>
             <Label Content="Nome: " HorizontalAlignment="Left" Margin="406,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-0.326"/>

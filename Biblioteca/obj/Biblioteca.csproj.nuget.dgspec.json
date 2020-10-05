@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\soare\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\obj\\",
+        "outputPath": "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soare\\AppData\\Roaming\\NuGet\\NuGet.Config",

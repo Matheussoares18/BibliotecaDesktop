@@ -45,15 +45,15 @@ namespace Biblioteca
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
+
             fmrCadastroClientes fmrCliente = new fmrCadastroClientes();
             fmrCliente.ShowDialog();
            
-=======
+
             fmrCadastroClientes frmCliente = new fmrCadastroClientes();
             frmCliente.ShowDialog();
 
->>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -63,22 +63,37 @@ namespace Biblioteca
             this.Close();
         }
 
-<<<<<<< HEAD
-        
+
+
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             fmrListarClientes frm = new fmrListarClientes();
             frm.Show();
             this.Close();
+        }
 
-=======
+
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             fmrCadastrarLivro fmrLivro = new fmrCadastrarLivro();
-            fmrLivro.ShowDialog();
+            fmrLivro.Show();
             this.Close();
->>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            frmEmprestimo frm = new frmEmprestimo();
+            frm.Show();
+            this.Close();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            frmListarEmpresetimo frm = new frmListarEmpresetimo();
+            frm.Show();
+            this.Close();
         }
     }
 }

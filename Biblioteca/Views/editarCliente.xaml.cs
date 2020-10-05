@@ -21,6 +21,7 @@ namespace Biblioteca.Views
     {
        
         private List<Cliente> Clientes = new List<Cliente>();
+        private Cliente cliente;
         public editarCliente()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Biblioteca.Views
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
-
+            editCliente();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -38,6 +39,7 @@ namespace Biblioteca.Views
             cmbListCliente.DisplayMemberPath = "fullName";
             cmbListCliente.SelectedValuePath = "Id";
             btnSalvar.IsEnabled = false;
+            txtId.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -52,6 +54,39 @@ namespace Biblioteca.Views
             fmrListarClientes fmr = new fmrListarClientes();
             fmr.Show();
             this.Close();
+        }
+
+        private void cmbListCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int selectedId = (int)cmbListCliente.SelectedValue;
+            Cliente foundCliente = ClienteDAO.BuscarPorId(selectedId);
+
+            cliente = foundCliente;
+            txtId.Text = cliente.Id.ToString();
+            txtNome.Text = cliente.fullName;
+            txtCpf.Text = cliente.cpf;
+            txtEmail.Text = cliente.email;
+            datePicker1.DisplayDate = cliente.dateBirth;
+            txtTelefone.Text = cliente.telefone.ToString();
+            btnSalvar.IsEnabled = true;
+        }
+        private void editCliente()
+        {
+            DateTime? selectedDate = datePicker1.SelectedDate;
+            DateTime formated = selectedDate.Value;
+
+            cliente.email = txtEmail.Text;
+            cliente.cpf = txtEmail.Text;
+            cliente.fullName = txtNome.Text;
+            cliente.dateBirth = formated;
+            ClienteDAO.Alterar(cliente);
+
+            txtEmail.Clear();
+            txtCpf.Clear();
+            txtId.Clear();
+            txtNome.Clear();
+            btnSalvar.IsEnabled = false;
+
         }
     }
 }

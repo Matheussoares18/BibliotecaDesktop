@@ -21,5 +21,7 @@ namespace Biblioteca.Models
 
         public int telefone { get; set; }
 
+        public Boolean multa { get; set; }
+
     }
 }

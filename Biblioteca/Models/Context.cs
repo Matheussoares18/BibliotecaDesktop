@@ -13,6 +13,8 @@ namespace Biblioteca.Models
 
         public DbSet<Livro> Livro { get; set; }
 
+        public DbSet<Emprestimo> Emprestimo { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=localhost;Database=Biblioteca;Trusted_Connection=true");

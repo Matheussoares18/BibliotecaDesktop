@@ -18,6 +18,7 @@ namespace Biblioteca.Models
         public string isbn { get; set; }
         public string ano { get; set; }
         public string editora { get; set; }
+        public Boolean emprestado { set; get; }
 
     }
 }

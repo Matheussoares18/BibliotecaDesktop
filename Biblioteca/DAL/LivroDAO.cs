@@ -12,6 +12,13 @@ namespace Biblioteca.DAL
 
         private static Context _context = SingletonContext.GetInstance();
         public static Livro BuscarPorisbn(string isbn) => _context.Livro.FirstOrDefault(x => x.isbn == isbn);
+
+        public static List<Livro> Listar() =>
+        _context.Livro.ToList();
+
+        public static Livro BuscarPorId(int Id) =>
+        _context.Livro.Find(Id);
+
         public static void BookRegister(Livro livro)
         {
             if (BuscarPorisbn(livro.isbn) == null)

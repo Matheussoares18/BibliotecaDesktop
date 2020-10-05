@@ -75,7 +75,7 @@ namespace Biblioteca.Views
             txtCpf.Clear();
             txtId.Clear();
             txtNome.Clear();
-           btnSalvar.IsEnabled = false;
+            btnSalvar.IsEnabled = false;
             
 
         }

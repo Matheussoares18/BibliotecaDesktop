@@ -14,6 +14,15 @@ namespace Biblioteca.DAO
         public static Cliente BuscarPorcpf(string cpf) =>
            _context.Cliente.FirstOrDefault(x => x.cpf == cpf);
 
+        public static Cliente BuscarPorId(int Id) =>
+          _context.Cliente.Find(Id);
+
+        public static void Alterar(Cliente cliente)
+        {
+            _context.Cliente.Update(cliente);
+            _context.SaveChanges();
+        }
+
         public static List<Cliente> Listar() =>
           _context.Cliente.ToList();
         public static void userRegister(Cliente cliente)

@@ -10,11 +10,12 @@
         <Button Content="Funcionários" HorizontalAlignment="Left" Margin="559,152,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_1"/>
         <Button Content="Clientes" HorizontalAlignment="Left" Margin="559,194,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_2" />
         <Button Content="Listar Funcionários" HorizontalAlignment="Left" Margin="559,236,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click"/>
-<<<<<<< HEAD
         <Button Content="Listar Clientes" HorizontalAlignment="Left" Margin="559,278,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click_4"/>
 
-=======
+
         <Button Content="Cadastrar Livros" HorizontalAlignment="Left" Margin="559,110,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_3"/>
->>>>>>> ed10e10d9b46bdb82630b81f645945727dd04d5a
+        <Button Content="Emprestar livro" HorizontalAlignment="Left" Margin="559,68,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click_5"/>
+        <Button Content="Listar empréstimos" HorizontalAlignment="Left" Margin="559,26,0,0" VerticalAlignment="Top" Height="37" RenderTransformOrigin="4.115,-0.908" Width="188" Click="Button_Click_6"/>
+
     </Grid>
 </Window>

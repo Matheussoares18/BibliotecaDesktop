@@ -1,0 +1,29 @@
+﻿<Window x:Class="Biblioteca.Views.frmListarEmpresetimo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteca.Views"
+        mc:Ignorable="d"
+        Title="frmListarEmpresetimo" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="listItems" Margin="0,0,607,0" SelectionChanged="listItems_SelectionChanged"/>
+
+        <DataGrid x:Name="dtaEmprestimos"  AutoGenerateColumns="False" HorizontalAlignment="Left" Width="607" Margin="193,0,0,236" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Funcionario.Id}"
+                                    Header="FuncionarioId" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Cliente.Id}"
+                                    Header="ClienteId" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding dataDevolucao}"
+                                    Header="Data prevista de devolução" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding devolvido}"
+                                    Header="Devolvido" Width="1*"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnMulta" Content="Pagar Multa" HorizontalAlignment="Left" Margin="392,234,0,0" VerticalAlignment="Top" Width="133"/>
+        <Button x:Name="btnDevolver" Content="Devolver" HorizontalAlignment="Left" Margin="574,234,0,0" VerticalAlignment="Top" Width="133" Click="Button_Click"/>
+    </Grid>
+</Window>

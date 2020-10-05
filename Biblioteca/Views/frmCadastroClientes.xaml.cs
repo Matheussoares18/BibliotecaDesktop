@@ -39,7 +39,8 @@ namespace Biblioteca.Views
                 email = txtEmail.Text,
                 fullName = txtNome.Text,
                 dateBirth = formated,
-                telefone = Convert.ToInt32(txtNumero.Text)
+                telefone = Convert.ToInt32(txtNumero.Text),
+                multa = false
 
             };
             ClienteDAO.userRegister(cliente);

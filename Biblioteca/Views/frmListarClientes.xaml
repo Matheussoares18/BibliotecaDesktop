@@ -21,7 +21,7 @@
                 <DataGridTextColumn Binding="{Binding email}"
                                     Header="email" Width="1*"/>
 
-                <DataGridTextColumn Binding="{Binding contatosCliente}"
+                <DataGridTextColumn Binding="{Binding telefone}"
                                     Header="telefone" Width="1*"/>
             </DataGrid.Columns>
         </DataGrid>

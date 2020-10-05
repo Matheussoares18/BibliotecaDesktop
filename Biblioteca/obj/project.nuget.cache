@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vFY9Kv974xOFQyGXclxiyK8hJEzFmzNGKx16kII4wM1e64PCWCxk+/9NnTWtkfKEle2+OFAgoIeztQ3p4OamrQ==",
+  "dgSpecHash": "bf8aLgPYTjOq7xNqONN/dF5nhZYH0zWutft/enyR8Tfa4Q61LFqcc79J8f4nlFz3MSgy2lBRsYboRgTUoazz1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "C:\\Users\\soare\\source\\repos\\BibliotecaDesktop1\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soare\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\soare\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -105,12 +105,5 @@
     "C:\\Users\\soare\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\soare\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\soare\\source\\repos\\Biblioteca\\Biblioteca\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

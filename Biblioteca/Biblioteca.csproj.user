@@ -10,15 +10,18 @@
     <Compile Update="Views\editarCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\frmListarClientes.xaml.cs"/>
-    <Compile Update="Views\fmrCadastrarLivro.xaml.cs"/>
-    <Compile Update="Views\fmrListarClientes.xaml.cs">
+    <Compile Update="Views\frmEmprestimo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\frmListarClientes.xaml.cs" />
+    <Compile Update="Views\fmrCadastrarLivro.xaml.cs" />
     <Compile Update="Views\frmEditarFuncionario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmCadastroClientes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmListarEmprestimo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\frmListarFuncionarios.xaml.cs">
@@ -32,16 +35,18 @@
     <Page Update="Views\editarCliente.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\frmListarClientes.xaml"/>
-    <Page Update="Views\fmrCadastrarLivro.xaml"/>
-    <Page Update="Views\fmrListarClientes.xaml">
-
+    <Page Update="Views\frmEmprestimo.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\frmListarClientes.xaml" />
+    <Page Update="Views\fmrCadastrarLivro.xaml" />
     <Page Update="Views\frmEditarFuncionario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmCadastroClientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmListarEmprestimo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\frmListarFuncionarios.xaml">

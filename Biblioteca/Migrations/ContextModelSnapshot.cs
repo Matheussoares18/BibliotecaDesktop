@@ -41,12 +41,46 @@ namespace Biblioteca.Migrations
                     b.Property<string>("fullName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("multa")
+                        .HasColumnType("bit");
+
                     b.Property<int>("telefone")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Cliente");
+                });
+
+            modelBuilder.Entity("Biblioteca.Models.Emprestimo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("clienteId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("dataDevolucao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("devolvido")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("funcionarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("clienteId");
+
+                    b.HasIndex("funcionarioId");
+
+                    b.ToTable("Emprestimo");
                 });
 
             modelBuilder.Entity("Biblioteca.Models.Funcionario", b =>
@@ -95,6 +129,9 @@ namespace Biblioteca.Migrations
                     b.Property<string>("editora")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("emprestado")
+                        .HasColumnType("bit");
+
                     b.Property<string>("genero")
                         .HasColumnType("nvarchar(max)");
 
@@ -107,6 +144,53 @@ namespace Biblioteca.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Livro");
+                });
+
+            modelBuilder.Entity("Biblioteca.Models.LivroEmprestimo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("EmprestimoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("livroId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmprestimoId");
+
+                    b.HasIndex("livroId");
+
+                    b.ToTable("LivroEmprestimo");
+                });
+
+            modelBuilder.Entity("Biblioteca.Models.Emprestimo", b =>
+                {
+                    b.HasOne("Biblioteca.Models.Cliente", "cliente")
+                        .WithMany()
+                        .HasForeignKey("clienteId");
+
+                    b.HasOne("Biblioteca.Models.Funcionario", "funcionario")
+                        .WithMany()
+                        .HasForeignKey("funcionarioId");
+                });
+
+            modelBuilder.Entity("Biblioteca.Models.LivroEmprestimo", b =>
+                {
+                    b.HasOne("Biblioteca.Models.Emprestimo", null)
+                        .WithMany("Itens")
+                        .HasForeignKey("EmprestimoId");
+
+                    b.HasOne("Biblioteca.Models.Livro", "livro")
+                        .WithMany()
+                        .HasForeignKey("livroId");
                 });
 #pragma warning restore 612, 618
         }
