@@ -1,16 +1,7 @@
 ﻿using Biblioteca.DAO;
 using Biblioteca.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -19,7 +10,7 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class fmrCadastroClientes : Window
     {
-       
+
         public fmrCadastroClientes()
         {
             InitializeComponent();
@@ -40,6 +31,7 @@ namespace Biblioteca.Views
                 fullName = txtNome.Text,
                 dateBirth = formated,
                 telefone = Convert.ToInt32(txtNumero.Text),
+                celular = Convert.ToInt32(txtCelular.Text),
                 multa = false
 
             };

@@ -9,16 +9,16 @@
         Loaded="Window_Loaded">
     <Grid>
         <ListBox x:Name="listItems" Margin="0,0,607,0" SelectionChanged="listItems_SelectionChanged"/>
-        <Button x:Name="btnMulta" Content="Pagar Multa" HorizontalAlignment="Left" Margin="424,184,0,0" VerticalAlignment="Top" Width="133" Click="btnMulta_Click"/>
-        <Button x:Name="btnDevolver" Content="Devolver" HorizontalAlignment="Left" Margin="573,184,0,0" VerticalAlignment="Top" Width="133" Click="Button_Click"/>
-        <Label Content="Cliente: " HorizontalAlignment="Left" Margin="415,66,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Margin="468,70,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Data prevista de devolução" HorizontalAlignment="Left" Margin="414,89,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtData" HorizontalAlignment="Left" Margin="573,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Devolvido" HorizontalAlignment="Left" Margin="415,107,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDevolvido" HorizontalAlignment="Left" Margin="483,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Funcionário: " HorizontalAlignment="Left" Margin="414,44,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFunc" HorizontalAlignment="Left" Margin="491,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" Margin="285,184,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click_1"/>
+        <Button x:Name="btnMulta" Content="Pagar Multa" HorizontalAlignment="Left" Margin="353,184,0,0" VerticalAlignment="Top" Width="133" Click="btnMulta_Click"/>
+        <Button x:Name="btnDevolver" Content="Devolver" HorizontalAlignment="Left" Margin="501,184,0,0" VerticalAlignment="Top" Width="133" Click="Button_Click"/>
+        <Label Content="Cliente: " HorizontalAlignment="Left" Margin="314,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Margin="400,71,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Data prevista de devolução" HorizontalAlignment="Left" Margin="314,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtData" HorizontalAlignment="Left" Margin="481,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Devolvido:" HorizontalAlignment="Left" Margin="314,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDevolvido" HorizontalAlignment="Left" Margin="400,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Funcionário: " HorizontalAlignment="Left" Margin="314,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFunc" HorizontalAlignment="Left" Margin="400,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="233,184,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click_1"/>
     </Grid>
 </Window>

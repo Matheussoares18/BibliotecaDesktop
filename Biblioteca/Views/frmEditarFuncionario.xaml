@@ -10,18 +10,18 @@
     <Grid>
         <Label Content="Selecione o funcionário:" HorizontalAlignment="Left" Margin="30,91,0,0" VerticalAlignment="Top" Width="145"/>
         <ComboBox x:Name="cmbListFunc" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="145" SelectionChanged="cmbListFunc_SelectionChanged"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="454,154,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Id: " HorizontalAlignment="Left" Margin="413,150,0,0" VerticalAlignment="Top" Width="22"/>
-        <Label Content="Nome: " HorizontalAlignment="Left" Margin="406,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-0.326"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="454,177,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="CPF: " HorizontalAlignment="Left" Margin="406,195,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="454,199,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="454,222,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Email: " HorizontalAlignment="Left" Margin="402,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,0.3"/>
-        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="454,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="400,154,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Id: " HorizontalAlignment="Left" Margin="344,150,0,0" VerticalAlignment="Top" Width="22"/>
+        <Label Content="Nome: " HorizontalAlignment="Left" Margin="344,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-0.326"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="400,177,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <Label Content="CPF: " HorizontalAlignment="Left" Margin="345,196,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.372,0.47"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="400,200,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="400,222,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Email: " HorizontalAlignment="Left" Margin="344,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,0.3"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="400,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
         <Button Content="Voltar" HorizontalAlignment="Left" Margin="30,299,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click"/>
-        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="487,244,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="dataDeNasc" Content="Data de nasc:" HorizontalAlignment="Left" Margin="405,243,0,0" VerticalAlignment="Top" Width="82"/>
+        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="433,245,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.192,0.51"/>
+        <Label x:Name="dataDeNasc" Content="Data de nasc:" HorizontalAlignment="Left" Margin="344,243,0,0" VerticalAlignment="Top" Width="82"/>
 
     </Grid>
 </Window>

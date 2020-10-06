@@ -16,7 +16,11 @@ namespace Biblioteca.Views
     {
         private List<Funcionario> Funcionarios = new List<Funcionario>();
         private List<Cliente> Clientes = new List<Cliente>();
+        private List<Emprestimo> Multas = new List<Emprestimo>();
+
+        private List<Emprestimo> ResultMultas = new List<Emprestimo>();
         private List<Livro> Livros = new List<Livro>();
+        private List<Livro> LivrosEscolhidos = new List<Livro>();
 
 
         private Emprestimo emprestimo = new Emprestimo();
@@ -49,6 +53,7 @@ namespace Biblioteca.Views
         {
             int idLivro = (int)cmbLivro.SelectedValue;
             Livro livro = LivroDAO.BuscarPorId(idLivro);
+            ;
             disableButton();
             if (livro.emprestado)
             {
@@ -58,10 +63,8 @@ namespace Biblioteca.Views
             else
             {
                 dtaLivros.Items.Add(livro);
+                LivrosEscolhidos.Add(livro);
                 PopularEmprestimo(livro);
-
-
-
             }
 
 
@@ -73,7 +76,13 @@ namespace Biblioteca.Views
             int idCliente = (int)cmbCliente.SelectedValue;
             Cliente cliente = ClienteDAO.BuscarPorId(idCliente);
             disableButton();
-            if (cliente.multa)
+            Multas = EmprestimoDAO.BuscarCliente(cliente.Id);
+
+            ResultMultas = Multas.FindAll(e => e.dataDevolucao < DateTime.Now && e.devolvido == false);
+
+
+
+            if (ResultMultas.Count > 0)
             {
                 MessageBox.Show("Cliente com pendencias, verifique a área de multas!!!", "Biblioteca",
                   MessageBoxButton.OK, MessageBoxImage.Information);
@@ -128,9 +137,9 @@ namespace Biblioteca.Views
         }
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < Livros.Count; i++)
+            for (int i = 0; i < LivrosEscolhidos.Count; i++)
             {
-                Livros[i].emprestado = true;
+                LivrosEscolhidos[i].emprestado = true;
 
             }
             emprestimo.dataDevolucao = DateTime.Parse("october 3, 2020");

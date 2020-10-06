@@ -15,7 +15,7 @@
                 <DataGridTextColumn Binding="{Binding fullName}"
                                     Header="Nome" Width="1*"/>
                 <DataGridTextColumn Binding="{Binding cpf}"
-                                    Header="Email" Width="1*"/>
+                                    Header="cpf" Width="1*"/>
                 <DataGridTextColumn  Binding="{Binding dateBirth}"
                                     Header="dataBirth" Width="1*"/>
                 <DataGridTextColumn Binding="{Binding email}"
@@ -23,6 +23,9 @@
 
                 <DataGridTextColumn Binding="{Binding telefone}"
                                     Header="telefone" Width="1*"/>
+
+                <DataGridTextColumn Binding="{Binding celular}"
+                                    Header="celular" Width="1*"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Voltar" HorizontalAlignment="Left" Margin="264,389,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click_1" />

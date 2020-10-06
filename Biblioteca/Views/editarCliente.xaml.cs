@@ -2,15 +2,8 @@
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -19,7 +12,7 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class editarCliente : Window
     {
-       
+
         private List<Cliente> Clientes = new List<Cliente>();
         private Cliente cliente;
         public editarCliente()
@@ -68,6 +61,7 @@ namespace Biblioteca.Views
             txtEmail.Text = foundCliente.email;
             datePicker1.SelectedDate = foundCliente.dateBirth;
             txtTelefone.Text = foundCliente.telefone.ToString();
+            txtCelular.Text = foundCliente.celular.ToString();
             btnSalvar.IsEnabled = true;
         }
         private void editCliente()
@@ -79,6 +73,7 @@ namespace Biblioteca.Views
             cliente.cpf = txtEmail.Text;
             cliente.fullName = txtNome.Text;
             cliente.dateBirth = formated;
+            cliente.celular = Convert.ToInt32(txtCelular.Text);
             ClienteDAO.Alterar(cliente);
 
             txtEmail.Clear();

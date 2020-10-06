@@ -29,6 +29,9 @@ namespace Biblioteca.DAL
 
         public static List<Emprestimo> Listar() =>
            _context.Emprestimo.ToList();
+
+        public static List<Emprestimo> BuscarCliente(int Id) =>
+      _context.Emprestimo.Where(i => i.cliente.Id == Id).ToList();
         public static Emprestimo BuscarPorId(int Id) =>
        _context.Emprestimo.Include(i => i.cliente).Include(i => i.funcionario).Include(i => i.Itens).FirstOrDefault(x => x.Id == Id);
 

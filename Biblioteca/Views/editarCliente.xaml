@@ -19,12 +19,14 @@
             <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="336,203,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
             <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="336,226,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
             <Label Content="Email: " HorizontalAlignment="Left" Margin="287,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,0.3"/>
-            <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
-            <Button Content="Voltar" HorizontalAlignment="Left" Margin="30,327,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_1" />
+            <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="0,352,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
+            <Button Content="Voltar" HorizontalAlignment="Left" Margin="30,352,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_1" />
             <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="374,254,0,0" VerticalAlignment="Top" Width="115"/>
             <Label x:Name="dataDeNasc" Content="Data de nasc:" HorizontalAlignment="Left" Margin="287,252,0,0" VerticalAlignment="Top" Width="82"/>
             <Label Content="Telefone: " HorizontalAlignment="Left" Margin="288,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.009,0.304" Width="65"/>
             <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="353,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+            <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Margin="353,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+            <Label Content="Celular: " HorizontalAlignment="Left" Margin="295,305,0,0" VerticalAlignment="Top"/>
 
         </Grid>
     </Grid>
