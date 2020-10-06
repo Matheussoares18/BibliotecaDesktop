@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="fmrCadastroClientes" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="113,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Nome:" HorizontalAlignment="Left" Margin="70,213,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Margin="113,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.268,0.552"/>
-        <Label Content="CPF:" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.336,0.429"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="113,287,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="70,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
-        <Label Content="Data de nascimento:" HorizontalAlignment="Left" Margin="70,314,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="193,315,0,0" VerticalAlignment="Top"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="111,394,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="309,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="248,209,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Margin="309,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.268,0.552"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="248,239,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.336,0.429"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="309,278,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="248,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <Label Content="Data de nascimento:" HorizontalAlignment="Left" Margin="175,308,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.61,0.568"/>
+        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="309,314,0,0" VerticalAlignment="Top" Width="218"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="296,389,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
         <Label Content="Cadastro de Clientes" HorizontalAlignment="Left" Margin="62,99,0,0" VerticalAlignment="Top" Width="399" FontSize="36" RenderTransformOrigin="0.505,-0.044"/>
-        <Label Content="Telefone: " HorizontalAlignment="Left" Margin="77,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.176,0.05" Width="60"/>
-        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Margin="142,345,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" Margin="275,394,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1"/>
+        <Label Content="Telefone: " HorizontalAlignment="Left" Margin="232,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.176,0.05" Width="60"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Margin="309,353,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="442,389,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

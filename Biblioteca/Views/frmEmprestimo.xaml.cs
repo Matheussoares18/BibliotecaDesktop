@@ -18,6 +18,7 @@ namespace Biblioteca.Views
         private List<Cliente> Clientes = new List<Cliente>();
         private List<Livro> Livros = new List<Livro>();
 
+
         private Emprestimo emprestimo = new Emprestimo();
         public frmEmprestimo()
         {
@@ -58,6 +59,9 @@ namespace Biblioteca.Views
             {
                 dtaLivros.Items.Add(livro);
                 PopularEmprestimo(livro);
+
+
+
             }
 
 
@@ -78,6 +82,9 @@ namespace Biblioteca.Views
             {
                 dtaClientes.Items.Add(cliente);
                 emprestimo.cliente = cliente;
+
+
+
             }
 
         }
@@ -95,7 +102,7 @@ namespace Biblioteca.Views
         }
         private void PopularEmprestimo(Livro livro)
         {
-            livro.emprestado = true;
+
             emprestimo.Itens.Add(
                 new LivroEmprestimo
                 {
@@ -103,7 +110,6 @@ namespace Biblioteca.Views
 
                 }
                 );
-            LivroDAO.Alterar(livro);
         }
         private void cmbFuncionario_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -122,6 +128,11 @@ namespace Biblioteca.Views
         }
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            for (int i = 0; i < Livros.Count; i++)
+            {
+                Livros[i].emprestado = true;
+
+            }
             emprestimo.dataDevolucao = DateTime.Parse("october 3, 2020");
             emprestimo.devolvido = false;
             dtaLivros.Items.Clear();

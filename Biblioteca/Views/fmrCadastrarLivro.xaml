@@ -9,22 +9,22 @@
         Title="fmrCadastrarLivro" Height="450" Width="800">
     <Grid x:Name="txtQtd">
 
-        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Margin="117,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="Titulo:" HorizontalAlignment="Left" Margin="68,165,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAutor" HorizontalAlignment="Left" Margin="117,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.268,0.552"/>
-        <Label Content="Autor:" HorizontalAlignment="Left" Margin="67,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.336,0.429"/>
-        <TextBox x:Name="txtGenero" HorizontalAlignment="Left" Margin="117,234,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="Genero:" HorizontalAlignment="Left" Margin="63,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
-        <TextBox x:Name="txtIsbn" HorizontalAlignment="Left" Margin="117,261,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="ISBN:" HorizontalAlignment="Left" Margin="70,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
-        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Margin="117,292,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="Ano:" HorizontalAlignment="Left" Margin="72,288,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
-        <TextBox x:Name="txtEditora" HorizontalAlignment="Left" Margin="117,322,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
-        <Label Content="Editora:" HorizontalAlignment="Left" Margin="64,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="117,373,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" />
-        <Label Content="Cadastro de Livros" HorizontalAlignment="Left" Margin="54,41,0,0" VerticalAlignment="Top" Width="399" FontSize="36" RenderTransformOrigin="0.505,-0.044"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" Margin="254,373,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1"/>
-        <Label Content="Quantidade: " HorizontalAlignment="Left" Margin="69,344,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtQtd1" HorizontalAlignment="Left" Margin="146,348,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Margin="295,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Titulo:" HorizontalAlignment="Left" Margin="238,173,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAutor" HorizontalAlignment="Left" Margin="295,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.268,0.552"/>
+        <Label Content="Autor:" HorizontalAlignment="Left" Margin="238,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.336,0.429"/>
+        <TextBox x:Name="txtGenero" HorizontalAlignment="Left" Margin="295,226,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Genero:" HorizontalAlignment="Left" Margin="230,222,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <TextBox x:Name="txtIsbn" HorizontalAlignment="Left" Margin="295,252,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="ISBN:" HorizontalAlignment="Left" Margin="243,252,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Margin="295,283,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Ano:" HorizontalAlignment="Left" Margin="246,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <TextBox x:Name="txtEditora" HorizontalAlignment="Left" Margin="295,313,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Editora:" HorizontalAlignment="Left" Margin="238,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,-0.366"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="282,389,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" />
+        <Label Content="Cadastro de Livros" HorizontalAlignment="Left" Margin="230,92,0,0" VerticalAlignment="Top" Width="399" FontSize="36" RenderTransformOrigin="0.505,-0.044"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="429,389,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1"/>
+        <Label Content="Quantidade: " HorizontalAlignment="Left" Margin="212,338,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtQtd1" HorizontalAlignment="Left" Margin="295,342,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
     </Grid>
 </Window>

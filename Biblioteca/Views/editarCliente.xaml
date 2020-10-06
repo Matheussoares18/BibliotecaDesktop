@@ -11,20 +11,20 @@
         <Grid>
             <Label Content="Selecione o Cliente" HorizontalAlignment="Left" Margin="30,91,0,0" VerticalAlignment="Top" Width="145"/>
             <ComboBox x:Name="cmbListCliente" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="145" SelectionChanged="cmbListCliente_SelectionChanged"/>
-            <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="454,154,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label Content="Id: " HorizontalAlignment="Left" Margin="413,150,0,0" VerticalAlignment="Top" Width="22"/>
-            <Label Content="Nome: " HorizontalAlignment="Left" Margin="406,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-0.326"/>
-            <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="454,177,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label Content="CPF: " HorizontalAlignment="Left" Margin="406,195,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="454,199,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="454,222,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
-            <Label Content="Email: " HorizontalAlignment="Left" Margin="402,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,0.3"/>
-            <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="454,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
-            <Button Content="Voltar" HorizontalAlignment="Left" Margin="30,300,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1" />
-            <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="487,244,0,0" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="dataDeNasc" Content="Data de nasc:" HorizontalAlignment="Left" Margin="403,244,0,0" VerticalAlignment="Top" Width="82"/>
-            <Label Content="Telefone: " HorizontalAlignment="Left" Margin="403,269,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.009,0.304" Width="65"/>
-            <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="457,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="336,158,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+            <Label Content="Id: " HorizontalAlignment="Left" Margin="295,150,0,0" VerticalAlignment="Top" Width="22"/>
+            <Label Content="Nome: " HorizontalAlignment="Left" Margin="288,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-0.326"/>
+            <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="336,181,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+            <Label Content="CPF: " HorizontalAlignment="Left" Margin="288,200,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="336,203,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="336,226,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+            <Label Content="Email: " HorizontalAlignment="Left" Margin="287,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,0.3"/>
+            <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-0.06" Width="120" Click="btnSalvar_Click"/>
+            <Button Content="Voltar" HorizontalAlignment="Left" Margin="30,327,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_1" />
+            <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="374,254,0,0" VerticalAlignment="Top" Width="115"/>
+            <Label x:Name="dataDeNasc" Content="Data de nasc:" HorizontalAlignment="Left" Margin="287,252,0,0" VerticalAlignment="Top" Width="82"/>
+            <Label Content="Telefone: " HorizontalAlignment="Left" Margin="288,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.009,0.304" Width="65"/>
+            <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="353,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
 
         </Grid>
     </Grid>

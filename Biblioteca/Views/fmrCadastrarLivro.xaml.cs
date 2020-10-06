@@ -1,6 +1,7 @@
 ﻿using Biblioteca.DAL;
 using Biblioteca.Models;
 using EFCore.BulkExtensions;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 
@@ -22,7 +23,7 @@ namespace Biblioteca.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < Convert.ToInt32(txtQtd1.Text); i++)
             {
                 Livro livro = new Livro
                 {
