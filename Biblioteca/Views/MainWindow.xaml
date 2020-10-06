@@ -9,8 +9,8 @@
     <Grid x:Name="btnListFuncionarios">
         <Button Content="Funcionários" HorizontalAlignment="Left" Margin="559,191,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_1"/>
         <Button Content="Clientes" HorizontalAlignment="Left" Margin="559,233,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_2" />
-        <Button Content="Listar Funcionários" HorizontalAlignment="Left" Margin="559,270,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click"/>
-        <Button Content="Listar Clientes" HorizontalAlignment="Left" Margin="559,312,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click_4"/>
+        <Button Content="Listar Funcionários" HorizontalAlignment="Left" Margin="559,275,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click"/>
+        <Button Content="Listar Clientes" HorizontalAlignment="Left" Margin="559,317,0,0" VerticalAlignment="Top" Width="188" Height="37" Click="Button_Click_4"/>
 
 
         <Button Content="Livros" HorizontalAlignment="Left" Margin="559,149,0,0" VerticalAlignment="Top" Height="37" Width="188" Click="Button_Click_3"/>

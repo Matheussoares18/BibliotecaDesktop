@@ -17,6 +17,7 @@
         <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="193,315,0,0" VerticalAlignment="Top"/>
         <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="111,364,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
         <Label Content="Cadastro de Funcionários" HorizontalAlignment="Left" Margin="60,140,0,0" VerticalAlignment="Top" Width="399" FontSize="36"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="282,364,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

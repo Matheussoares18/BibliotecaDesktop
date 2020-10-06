@@ -66,7 +66,7 @@ namespace Biblioteca.Views
             txtNome.Text = foundCliente.fullName;
             txtCpf.Text = foundCliente.cpf;
             txtEmail.Text = foundCliente.email;
-            datePicker1.DisplayDate = foundCliente.dateBirth;
+            datePicker1.SelectedDate = foundCliente.dateBirth;
             txtTelefone.Text = foundCliente.telefone.ToString();
             btnSalvar.IsEnabled = true;
         }

@@ -1,9 +1,7 @@
 ﻿using Biblioteca.DAL;
 using Biblioteca.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Biblioteca.DAO
 {
@@ -17,10 +15,19 @@ namespace Biblioteca.DAO
         public static Cliente BuscarPorId(int Id) =>
           _context.Cliente.Find(Id);
 
-        public static void Alterar(Cliente cliente)
+        public static bool Alterar(Cliente cliente)
         {
-            _context.Cliente.Update(cliente);
-            _context.SaveChanges();
+            try
+            {
+                _context.Cliente.Update(cliente);
+                _context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
         }
 
         public static List<Cliente> Listar() =>

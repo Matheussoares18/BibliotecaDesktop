@@ -3,15 +3,8 @@ using Biblioteca.DAO;
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -19,7 +12,7 @@ namespace Biblioteca.Views
     /// Lógica interna para frmEmprestimo.xaml
     /// </summary>
     public partial class frmEmprestimo : Window
-       
+
     {
         private List<Funcionario> Funcionarios = new List<Funcionario>();
         private List<Cliente> Clientes = new List<Cliente>();
@@ -66,9 +59,9 @@ namespace Biblioteca.Views
                 dtaLivros.Items.Add(livro);
                 PopularEmprestimo(livro);
             }
-           
-            
-           
+
+
+
         }
 
         private void cmbCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -107,22 +100,16 @@ namespace Biblioteca.Views
                 new LivroEmprestimo
                 {
                     livro = livro,
-                   
 
                 }
                 );
             LivroDAO.Alterar(livro);
-
-
         }
-      
-
         private void cmbFuncionario_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int idFuncionario = (int)cmbFuncionario.SelectedValue;
             Funcionario funcionario = FuncionarioDAO.BuscarPorId(idFuncionario);
             disableButton();
-
             if (dtaFuncionarios.Items.Count > 0)
             {
                 dtaFuncionarios.Items.Clear();
@@ -132,15 +119,24 @@ namespace Biblioteca.Views
             {
                 dtaFuncionarios.Items.Add(funcionario);
             }
-            
         }
-
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            emprestimo.dataDevolucao = DateTime.Now.AddDays(4);
+            emprestimo.dataDevolucao = DateTime.Parse("october 3, 2020");
             emprestimo.devolvido = false;
+            dtaLivros.Items.Clear();
+            dtaClientes.Items.Clear();
+            dtaFuncionarios.Items.Clear();
             EmprestimoDAO.Cadastrar(emprestimo);
+            btnCadastrar.IsEnabled = false;
             MessageBox.Show("Emprestimo realizado com sucesso!!!", "Biblioteca");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow frm = new MainWindow();
+            frm.Show();
+            this.Close();
         }
     }
 }

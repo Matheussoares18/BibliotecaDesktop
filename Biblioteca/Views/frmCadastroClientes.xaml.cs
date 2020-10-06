@@ -55,5 +55,12 @@ namespace Biblioteca.Views
             txtNome.Clear();
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow frm = new MainWindow();
+            frm.Show();
+            this.Close();
+        }
     }
 }

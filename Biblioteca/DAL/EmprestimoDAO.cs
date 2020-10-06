@@ -1,8 +1,7 @@
 ﻿using Biblioteca.Models;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Biblioteca.DAL
 {
@@ -20,7 +19,7 @@ namespace Biblioteca.DAL
             catch
             {
                 return false;
-            }      
+            }
         }
         public static void Alterar(Emprestimo emprestimo)
         {
@@ -31,7 +30,7 @@ namespace Biblioteca.DAL
         public static List<Emprestimo> Listar() =>
            _context.Emprestimo.ToList();
         public static Emprestimo BuscarPorId(int Id) =>
-       _context.Emprestimo.Find(Id);
+       _context.Emprestimo.Include(i => i.cliente).Include(i => i.funcionario).Include(i => i.Itens).FirstOrDefault(x => x.Id == Id);
 
         public static bool Remover(Emprestimo emprestimo)
         {
@@ -45,7 +44,7 @@ namespace Biblioteca.DAL
             {
                 return true;
             }
-           
+
         }
     }
 }

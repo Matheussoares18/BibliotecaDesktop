@@ -2,15 +2,8 @@
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -55,7 +48,7 @@ namespace Biblioteca.Views
             txtNome.Text = funcionario.nome;
             txtCpf.Text = funcionario.cpf;
             txtEmail.Text = funcionario.email;
-            datePicker1.DisplayDate = funcionario.dataNasc;
+            datePicker1.SelectedDate = funcionario.dataNasc;
             btnSalvar.IsEnabled = true;
 
         }
@@ -66,17 +59,17 @@ namespace Biblioteca.Views
             DateTime formated = selectedDate.Value;
 
             funcionarios.email = txtEmail.Text;
-            funcionarios.cpf = txtEmail.Text;
+            funcionarios.cpf = txtCpf.Text;
             funcionarios.nome = txtNome.Text;
             funcionarios.dataNasc = formated;
             FuncionarioDAO.Alterar(funcionarios);
-          
+
             txtEmail.Clear();
             txtCpf.Clear();
             txtId.Clear();
             txtNome.Clear();
             btnSalvar.IsEnabled = false;
-            
+
 
         }
 
@@ -85,5 +78,5 @@ namespace Biblioteca.Views
             editFuncionario();
         }
     }
-   
+
 }

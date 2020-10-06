@@ -1,16 +1,8 @@
 ﻿using Biblioteca.DAL;
 using Biblioteca.Models;
-using System;
+using EFCore.BulkExtensions;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -19,7 +11,10 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class fmrCadastrarLivro : Window
     {
-        private Livro livro;
+
+
+        private List<Livro> Livros = new List<Livro>();
+        private static Context _context = SingletonContext.GetInstance();
         public fmrCadastrarLivro()
         {
             InitializeComponent();
@@ -27,18 +22,22 @@ namespace Biblioteca.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Livro livro = new Livro
+            for (int i = 0; i < 10; i++)
             {
-                titulo = txtTitulo.Text,
-                autor = txtAutor.Text,
-                genero = txtGenero.Text,
-                isbn = txtIsbn.Text,
-                ano = txtAno.Text,
-                editora = txtEditora.Text,
+                Livro livro = new Livro
+                {
+                    titulo = txtTitulo.Text,
+                    autor = txtAutor.Text,
+                    genero = txtGenero.Text,
+                    isbn = txtIsbn.Text,
+                    ano = txtAno.Text,
+                    editora = txtEditora.Text,
+                    emprestado = false,
+                };
 
-            };
-
-            LivroDAO.BookRegister(livro);
+                Livros.Add(livro);
+            }
+            commitChangesAsync();
         }
         public void LimparFormulario()
         {
@@ -50,6 +49,21 @@ namespace Biblioteca.Views
             txtAno.Clear();
             txtEditora.Clear();
 
+        }
+        private async System.Threading.Tasks.Task commitChangesAsync()
+        {
+            _context.BulkInsert(Livros);
+
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow frm = new MainWindow();
+            frm.Show();
+            this.Close();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtQtd1.Text = 1.ToString();
         }
     }
 }

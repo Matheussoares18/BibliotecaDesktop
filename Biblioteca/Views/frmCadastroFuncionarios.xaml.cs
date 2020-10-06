@@ -2,8 +2,6 @@
 
 using Biblioteca.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 
 namespace Biblioteca.Views
@@ -13,11 +11,11 @@ namespace Biblioteca.Views
     /// </summary>
     public partial class CadastroFuncionarios : Window
     {
-       
+
         private Funcionario funcionario;
         public CadastroFuncionarios()
         {
-            InitializeComponent();    
+            InitializeComponent();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -57,6 +55,13 @@ namespace Biblioteca.Views
             txtCPF.Clear();
             txtNome.Clear();
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow frm = new MainWindow();
+            frm.Show();
+            this.Close();
         }
     }
 }

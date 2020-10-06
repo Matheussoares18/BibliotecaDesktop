@@ -1,9 +1,7 @@
-﻿using Biblioteca.DAL;
-using Biblioteca.Models;
+﻿using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Biblioteca.DAL
 {
@@ -29,22 +27,25 @@ namespace Biblioteca.DAL
             {
                 return false;
             }
-           
+
         }
 
 
         public static Livro BuscarPorId(int Id) =>
         _context.Livro.Find(Id);
 
-        public static void BookRegister(Livro livro)
+        public static async System.Threading.Tasks.Task BookRegisterAsync(Livro livro)
         {
-            if (BuscarPorisbn(livro.isbn) == null)
+            try
             {
-                _context.Livro.Add(livro);
+                await _context.Livro.AddAsync(livro);
                 _context.SaveChanges();
+
             }
-
-
+            catch
+            {
+                Console.WriteLine("n foi");
+            }
 
         }
 

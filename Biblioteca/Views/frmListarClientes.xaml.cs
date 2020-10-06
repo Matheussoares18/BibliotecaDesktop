@@ -1,16 +1,7 @@
 ﻿using Biblioteca.DAO;
 using Biblioteca.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -28,8 +19,8 @@ namespace Biblioteca.Views
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-           
-            
+
+
             Cliente.AddRange(ClienteDAO.Listar());
 
             dtaClientes.ItemsSource = Cliente;
@@ -41,6 +32,13 @@ namespace Biblioteca.Views
         {
             editarCliente frmEditar = new editarCliente();
             frmEditar.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
             this.Close();
         }
     }

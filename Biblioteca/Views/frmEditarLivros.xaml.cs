@@ -3,15 +3,8 @@ using Biblioteca.DAL;
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Biblioteca.Views
 {
@@ -34,7 +27,7 @@ namespace Biblioteca.Views
             cmbListLivros.DisplayMemberPath = "titulo";
             cmbListLivros.SelectedValuePath = "Id";
             btnSalvar.IsEnabled = false;
-         
+
         }
 
         private void cmbListLivros_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -70,7 +63,7 @@ namespace Biblioteca.Views
                 MessageBox.Show("Livro alterado com sucesso", "Biblioteca",
                     MessageBoxButton.OK, MessageBoxImage.Information);
             }
-        
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
